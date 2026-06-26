@@ -32,6 +32,18 @@
       letter-spacing: 1px;
       opacity: 0.75;
       transition: 0.2s;
+      padding: 0 10px;
+      position: relative;
+    }
+
+    nav a:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      right: -10px;
+      top: 20%;
+      height: 60%;
+      width: 1px;
+      background: #333;
     }
 
     nav a:hover {
@@ -52,13 +64,13 @@
       background-position: center;
     }
 
-    h1 {
+    header h1 {
       font-size: 4rem;
       margin: 0;
       letter-spacing: 3px;
     }
 
-    p {
+    header p {
       font-size: 1.2rem;
       opacity: 0.8;
     }
